@@ -1,0 +1,28 @@
+import { createBrowserRouter } from 'react-router-dom';
+import Layout from './Layout/Layout';
+import HomePage from '../pages/HomePage';
+import MemePage from '../pages/MemePage';
+import AuthPage from '../pages/AuthPage';
+
+const router = createBrowserRouter([
+  {
+    path: '',
+    element: <Layout />,
+    children: [
+      {
+        path: '/',
+        element: <HomePage />,
+      },
+      {
+        path: '/meme-api',
+        element: <MemePage />,
+      },
+      {
+        path: '/auth-api',
+        element: <AuthPage />,
+      },
+    ],
+  },
+]);
+
+export default router;
