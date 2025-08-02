@@ -1,8 +1,8 @@
 import { createBrowserRouter } from 'react-router-dom';
 import Layout from './Layout/Layout';
-import HomePage from '../pages/HomePage';
 import MemePage from '../pages/MemePage';
 import AuthPage from '../pages/AuthPage';
+import { HomePage } from '../pages';
 
 const router = createBrowserRouter([
   {

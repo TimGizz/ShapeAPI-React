@@ -1,0 +1,14 @@
+.github{
+    font-family: "Montserrat", sans-serif;
+    color: var(--primary-color);
+    font-size: 24px;
+    background-color: var(--secondary-color);
+    padding: 0.32px 48px;
+    border-radius: var(--radius);
+    border: 1.5px solid var(--secondary-color);
+    transition: 0.2s ease-in-out;
+    &:hover{
+        background-color: var(--primary-color);
+        color: var(--secondary-color);
+    }
+}

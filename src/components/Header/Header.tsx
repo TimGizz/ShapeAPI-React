@@ -1,15 +1,17 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import logo from '../../assets/ShapeAPI.svg';
-import theme from '../../assets/Theme.svg';
-import lang from '../../assets/lang.svg';
 import style from './style.module.css';
+import { useLang } from '../../hooks/useLang';
 
 export function Header() {
   const [Theme, setTheme] = useState<'light' | 'dark'>(
     (localStorage.getItem('theme') as 'light' | 'dark') || 'dark',
   );
-  console.log();
+  const {lang, setLang} = useLang()
+
+  useEffect(() => {
+    localStorage.setItem('lang', lang);
+  }, [lang]);
 
   useEffect(() => {
     localStorage.setItem('theme', Theme);
@@ -52,7 +54,7 @@ export function Header() {
               />
             </svg>
           </button>
-          <button>
+          <button onClick={()=>setLang(lang == 'en'? 'ru': 'en')}>
             <svg
               width="28"
               height="28"
