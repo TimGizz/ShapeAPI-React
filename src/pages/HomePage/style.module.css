@@ -1,0 +1,39 @@
+section {
+  padding-top: 208px;
+  .container {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 52px;
+    font-family: 'Montserrat', sans-serif;
+    .title {
+      font-weight: 900;
+      max-width: 679px;
+      color: var(--secondary-color);
+      font-size: 40px;
+    }
+    .subtitle {
+      color: var(--text-color);
+      margin-top: 16px;
+    }
+    .btns {
+      margin-top: 32px;
+      display: flex;
+      gap: 16px;
+    }
+    .powered {
+      color: var(--text-color);
+      font-size: 16px;
+      margin-top: 32px;
+      a {
+        color: var(--text-color);
+        font-size: 16px;
+        padding: 0 2px;
+        border-radius: 10%;
+        transition: ease-in-out 0.2s;
+        &:hover{
+            background-color: var(--hover-color);
+        }
+      }
+    }
+  }
+}
