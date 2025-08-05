@@ -1,9 +1,9 @@
 section {
-  padding-top: 208px;
   .container {
     display: flex;
     justify-content: space-between;
     padding: 0 52px;
+    padding-top: 208px;
     font-family: 'Montserrat', sans-serif;
     .title {
       font-weight: 900;
