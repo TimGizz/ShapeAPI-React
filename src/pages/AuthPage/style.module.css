@@ -1,0 +1,98 @@
+.container {
+  padding: 0 52px;
+  padding-top: 128px;
+  font-family: 'Montserrat', sans-serif;
+  .title {
+    color: var(--secondary-color);
+    font-size: 32px;
+  }
+  .info {
+    margin-top: 32px;
+    .urlContainer{
+      max-width: fit-content;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .url {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      font-family: 'JetBrains Mono', sans-serif;
+      color: var(--secondary-color);
+      font-size: 16px;
+      padding: 5px 16px;
+      background-color: var(--mono-links-color);
+      border: 1px solid var(--mono-links-border-color);
+      border-radius: 10px;
+      cursor: pointer;
+      svg{
+        path{
+          fill:  var(--secondary-color);
+        }
+      }
+    }
+    .methods {
+      margin-top: 8px;
+      display: flex;
+      gap: 55px;
+      .allowed {
+        color: var(--allowed-methods-color);
+      }
+      .denied {
+        color: var(--prohibited-methods-color);
+      }
+    }
+    p {
+      color: var(--secondary-color);
+    }
+  }
+  .btns {
+    display: flex;
+    gap: 16px;
+    .btn {
+      font-family: 'Montserrat', sans-serif;
+      padding: 8px 16px;
+      border-radius: var(--radius);
+      background-color: var(--secondary-color);
+      color: var(--primary-color);
+      border: none;
+      cursor: pointer;
+      transition: 0.2s ease-in-out;
+      &:hover {
+        background-color: var(--hover-color);
+        color: var(--secondary-color);
+      }
+    }
+  }
+  label {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 16px;
+    color: var(--text-color);
+    input {
+      font-family: 'Montserrat', sans-serif;
+      padding: 8px 16px;
+      border-radius: var(--radius);
+      border: 1px solid var(--mono-links-border-color);
+      background-color: var(--primary-color);
+      color: var(--text-color);
+    }
+  }
+  .response {
+    font-family: 'JetBrains Mono', monospace;
+    margin-top: 32px;
+    pre {
+      padding: 16px;
+      border: 1px solid var(--mono-links-border-color);
+      border-radius: 10px;
+      background-color: var(--mono-links-color);
+      white-space: pre-wrap;
+      flex-wrap: wrap;
+      word-break: break-all;
+      font-size: 16px;
+      color: var(--text-color);
+    }
+  }
+}
