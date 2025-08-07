@@ -1,0 +1,108 @@
+.container {
+  padding: 0 52px;
+  padding-top: 128px;
+  font-family: 'Montserrat', sans-serif;
+  .title {
+    color: var(--secondary-color);
+  }
+  .info {
+    margin-top: 16px;
+    max-width: fit-content;
+    .urlContainer {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .url {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      font-family: 'JetBrains Mono', sans-serif;
+      color: var(--secondary-color);
+      font-size: 16px;
+      padding: 5px 16px;
+      background-color: var(--mono-links-color);
+      border: 1px solid var(--mono-links-border-color);
+      border-radius: 10px;
+      cursor: pointer;
+      svg {
+        path {
+          fill: var(--secondary-color);
+        }
+      }
+    }
+    .methods {
+      margin-top: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      /* gap: 55px; */
+      .allowed {
+        color: var(--allowed-methods-color);
+      }
+      .denied {
+        color: var(--prohibited-methods-color);
+      }
+      .gimme {
+        font-family: 'Montserrat', sans-serif;
+        background-color: var(--secondary-color);
+        color: var(--primary-color);
+        border-radius: 10px;
+        cursor: pointer;
+        padding: 8px 16px;
+        transition: ease-in-out 0.2s;
+        border: none;
+        &:hover {
+          background-color: var(--hover-color);
+          color: var(--secondary-color);
+        }
+      }
+    }
+    p {
+      color: var(--secondary-color);
+    }
+  }
+  .memeContainer {
+    font-family: 'JetBrains Mono', monospace;
+    margin-top: 32px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+    .memeCardContainer{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto auto;
+      gap: 32px;
+      height: fit-content;
+      .memeCard{
+        padding: 14px;
+        border: 1px solid var(--secondary-color);
+        border-radius: 24px;
+        .memeImg{
+          max-width: 318px;
+          height: auto;
+          border-radius: 10px;
+        }
+        .memeTitle{
+          font-family: 'Montserrat', sans-serif;
+          color: var(--secondary-color);
+          font-size: 18px;
+          margin-top: 8px;
+        }
+      }
+
+    }
+    pre {
+      padding: 16px;
+      border: 1px solid var(--mono-links-border-color);
+      border-radius: 10px;
+      background-color: var(--mono-links-color);
+      white-space: pre-wrap;
+      flex-wrap: wrap;
+      word-break: break-all;
+      font-size: 16px;
+      color: var(--text-color);
+      height: fit-content;
+    }
+  }
+}
